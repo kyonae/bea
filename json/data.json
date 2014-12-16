@@ -1,0 +1,16 @@
+{"images": [
+		{
+			"url" : "http://farm3.static.flickr.com/2610/4148988872_990b6da667.jpg",
+			"delay" : 4000
+		},
+		{
+			"url" : "http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg",
+			"delay" : 2000
+		},
+		{
+			"url" : "http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg",
+			"delay" : 1000
+		}
+	],
+"cosa": 0
+}

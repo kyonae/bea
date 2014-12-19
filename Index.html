@@ -3,15 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>Cumpleaños BEA</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery-ui.min.js'></script>
 <script type='text/javascript' src='js/app.js'></script>
 <style>
+body{
+	overflow: hidden;
+	margin: 0;
+}
+.photos-container{
+	position: relative;
+}
 .photo{
 	display: none;
 	position:absolute;
 	margin: auto 0px;
 }
+
+#prueba1{
+	background-color: red;
+}
+#prueba2{
+	background-color: blue;
+}
+#prueba3{
+	background-color: yellow;
+}
+#prueba4{
+	background-color: brown;
+}
+
 
 </style>
 </head>
@@ -20,8 +42,37 @@
 	<source src="music/Altair.mp3" type="audio/mpeg">
 </audio -->
 
+<div id='intro'>
+	<p id="start">Hace mucho tiempo en una localidad muy, muy lejana&hellip;</p>
+	
+	<h1>BEATRIZ CERRILLO<br><sub>La historia</sub></h1>
+	
+	<div id="titles">
+		<div id="titlecontent">
+			
+			<p>26 de diciembre de 1984, Sevilla.</p>
+			
+			<p>En el hospital Virgen del Rocío nace Beatriz, la pequeña de 4 hermanos y 12 primos. Hay quien dice que en vez de llorar hizo una peineta y el médico comentó que "el carácter la acompañaba".</p>
+			<div class='intro-image'>
+				<img src="http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg">
+			</div>
+			
+			<p>Con el tiempo, este bebé regordete se fue convirtiendo en la pequeña Tatiridis: la niña más mofletuda y de mala leche del lugar.</p>
+			
+			<div class='intro-image'>Un par de fotos más</div>
+			
+			<p>El resto ya lo sabemos todos pero vamos a recordarlo&hellip;</p>
+		
+		</div>
+	</div>
+</div>
+
 <div id='photos-container'>
 </div>
 
+<div id='prueba1' class='prueba'></div>
+<div id='prueba2' class='prueba'></div>
+<div id='prueba3' class='prueba'></div>
+<div id='prueba4' class='prueba'></div>
 </body>
 </html>

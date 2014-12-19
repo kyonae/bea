@@ -1,13 +1,14 @@
 $(document).ready(function(){
-	$.ajax({
-		type: 'POST',
-		url: 'json/data.json',
-		success: function(response){
-			insertPhotos(response.images);
-			animatePhotos(response.images);
-			
-		}
+
+	init();
+	$('#photos-container').hide();
+	$('#titles').delay(55000).fadeOut();
+	$('#intro').delay(55200).slideUp(400,function(){
+		$('#photos-container').show();
+		//processPhotos();
 	});
+
+	//processPhotos();
 });
 
 $.fn.extend({
@@ -26,6 +27,26 @@ $.fn.extend({
 		});
 	}
 });
+
+function init(){
+	var divWidth = $('#titles').innerWidth();
+	$(".intro-image img").load(function() {
+		 alert($(this).width());
+	});
+
+}
+
+function processPhotos(){
+	$.ajax({
+		type: 'POST',
+		url: 'json/data.json',
+		success: function(response){
+			insertPhotos(response.images);
+			animatePhotos(response.images);
+			
+		}
+	});
+}
 
 function insertPhotos(response){
 	for (var i = 0; i < response.length; i++) {
